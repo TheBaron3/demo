@@ -1,0 +1,543 @@
+@import 'base.less';
+//Home组件
+.first-intro{
+    padding-top: 5.4vw;
+    padding-bottom: 7vw;
+    display:flex;
+    background-color: rgba(255, 255, 255, 1);
+
+    .group-intro{
+        margin-left: 15vw;
+
+        p{
+            margin: 0;
+        }
+
+        .group-intro-slogan{
+            .type1();
+            font-size: 1.6vw;
+        }
+
+        .group-intro-info{
+            .type4();
+            font-size: 0.8vw;
+            color: #555555;
+        }
+
+        .group-intro-news{
+            .type3();
+            font-size: 1vw;
+            color: #555555;
+        }
+
+        .group-intro-news-item{
+            .type3();
+            font-size: 0.81vw;
+            color: #AAAAAA;
+        }
+
+        .group-intro-news-date{
+            .type3();
+            font-size: 0.79vw;
+            color: #AAAAAA;
+        }
+
+        .line-1{
+            width: 11.8vw;
+            height: 0.05vw;
+            background-color: #AAAAAA;
+            margin: 0.5vw 0 1vw;
+        }
+    }
+
+    img{
+        width: 30vw;
+        height: 20vw;
+        margin-left: 8vw;
+        margin-top: 3vw;
+    }
+}
+
+.ellipse{
+    width: 104%;
+    margin: -5.5vw auto -5.5vw -2vw;
+    height: 15vw;
+    background-color:#E0F4FD;
+    border-radius: 50%;
+}
+
+.second-intro{
+    width: 100%;
+    background-color: #E0F4FD;
+    padding: 1.2vw 0 0.2vw;
+    display:flex;
+    flex-wrap:wrap;
+
+    .team-intro{
+        margin-left: 15vw;
+        width: 23vw;
+
+        p{
+            margin:0;
+            color: #333333;
+        }
+
+        .team-intro-title-1{
+            .type3();
+            font-size: 1.25vw;
+            color: #C00017;
+        }
+
+        .team-intro-title-2{
+            .type1();
+            font-size: 1.4vw;
+        }
+
+        .team-intro-info{
+            .type1();
+            font-size: 0.8vw;
+        }
+    }
+
+    .team-leader{
+        width: 30vw;
+        display: flex;
+        margin-top: 3vw;
+        margin-left: 12vw;
+        justify-content: space-between;
+
+        .team-leader-intro{
+            width: 10.7vw;
+            height: 16vw;
+
+            &:hover{
+                margin-top: -0.3vw;
+            }
+            
+            img{
+                width: 100%;
+                height: 13vw;
+            }  
+
+            .team-leader-name{
+                .type3();
+                font-size: 0.9vw;
+                text-align: center;
+            }
+        }
+    }
+
+    .team-event{
+        width: 75vw;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15vw;
+        margin-top: 4vw;
+
+        .team-event-item{
+            width: 15vw;
+            background-color: rgb(255,255,255);
+            box-shadow:0 0 0.3vw rgba(0, 0, 0, .4);
+
+            &:hover{
+                box-shadow:0.3vw 0.3vw 0.5vw rgba(0, 0, 0, .4);
+            }
+            
+            img{
+                width: 100%;
+                height: 11.4vw;
+            }
+
+            .team-event-name{
+                .type3();
+                font-size: 0.9vw;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.third-intro{
+    margin-bottom: 3vw;
+
+    .field-intro-title{
+        margin: 2.8vw auto 5vw;
+        .type3();
+        font-size: 1.3vw;
+        color: #C00017;
+        text-align: center;
+    }
+
+    .field-intro{
+        width: 63.2vw;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .field-intro-item{
+            width: 16.5vw;
+            height: 22vw;
+            box-shadow: 0.3vw 0.3vw 0.3vw rgba(0,0,0,.3);
+
+            img{
+                width: 7.9vw;
+                height: 6.8vw;
+            }
+
+            .field-intro-name{
+                margin-left: 0.8vw;
+                .type3();
+                font-size: 1.1vw;
+            }
+
+            .field-intro-info{
+                .type4();
+                height: 8vw;
+                margin-left: 0.7vw;
+                margin-right: 1.3vw;
+                font-size: 0.7vw;
+            }
+
+            .field-intro-link{
+                color: rgb(217,0,27);
+                display: inline-block;
+                font-size: 0.7vw;
+                margin: 0;
+                margin-left: 12vw;
+            }
+        }
+    }
+}
+
+.home-footer{
+    width: 100%;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    background-size: 100% 35vw;
+
+    .coworker-title{
+        .type3();
+        font-size: 1.9vw;
+        color: #FFFFFF;
+        margin:8vw auto 2vw;
+    }
+
+    .coworker-intro{
+        width: 70vw;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .coworker-info{
+            display: flex;
+            flex-direction:column;
+
+            img{
+                width: 7vw;
+                margin: auto;
+            }
+
+            .coworker-name{
+                .type3();
+                font-size: 1.45vw;
+                color: #FFFFFF;
+                text-align: center;
+            }
+        }
+    }
+
+    .footer-contact{
+        text-align: center;
+    }
+
+    .line-2{
+        width: 100%;
+        height: 0.05vw;
+        background-color:rgba(215,215,215);
+        margin-top: 3vw;
+    }
+
+    .footer-content{
+        .type4();
+        font-size: 0.95vw;
+        color: #FFFFFF;
+        margin: 2vw auto 0;
+    }
+}
+
+//Team组件
+.title{
+    font-family: 'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 1.25vw;
+    color: #C00017;
+    margin: 3.2vw auto 0;
+}
+
+.line-3{
+    display: flex;
+    justify-content:space-between;;
+    width: 10vw;
+    margin: 1vw auto 3vw;
+
+    div{
+        width: 1vw;
+        background-color:rgb(217,0,27);
+        height: 0.05vw;     
+    }
+}
+
+.teacher{
+    display: flex;
+    flex-direction: column;
+
+    .teacher-member{
+        width: 59vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-between;
+
+        .teacher-intro{
+            width: 26vw;
+            height: 25vw;
+            border: 0.05vw solid rgb(121,121,121);
+            box-shadow: 0.3vw 0.3vw 0.3vw rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+
+            img{
+                width: 10.5vw;
+                height: 13.2vw;
+                margin: 2vw auto 0;
+            }
+
+            .teacher-name{
+                .type3();
+                font-size: 0.9vw;
+                margin: 1.8vw auto 1vw;
+            }
+
+            .teacher-position{
+                .type3();
+                font-size: 1.4vw;
+                margin: 0 auto 1vw;
+            }
+
+            .teacher-work{
+                .type4();
+                font-size: 0.7vw;
+                margin: 0 auto;
+                color: #333333;
+            }
+        }
+    }
+    
+}
+
+.student{
+    display: flex;
+    flex-direction: column;
+
+    .student-member{
+        width: 79vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        .student-intro{
+            width: 17.7vw;
+            height: 24.5vw;
+            border: 0.05vw solid rgb(121,121,121);
+            box-shadow: 0.3vw 0.3vw 0.3vw rgba(0,0,0,0.3);
+            margin: 0 2.5vw 2.5vw 0;
+
+            &:nth-child(4n){
+                margin-right: 0;
+            }
+            
+            img{
+                margin-top: 2vw;
+                width: 100%;
+                height: 14.2vw;
+            }
+
+            .student-name{
+                margin: 0;
+                text-align: center;
+                .type3();
+                font-size: 1vw;
+                color: #D9001B;
+            }
+
+            .student-major{
+                margin-top: 2vw;
+                text-align: center;
+                .type3();
+                font-size: 0.8vw;
+            }
+        }
+    }
+}
+
+//Papers组件
+.paper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .line-4{
+        width: 10vw;
+        height: 0.2vw;
+        background-color:  rgb(217,0,27);
+        margin: 3.7vw auto 0;
+    }
+
+    .year_wrapper{
+        display: flex;
+        margin:0 auto;
+
+        .year{
+            margin: 1.6vw 0.74vw 2.1vw;
+            .type3();
+            font-size: 1vw;
+
+            &:hover{
+                color:rgba(228, 69, 69, 0.3);
+            }
+
+            &:first-child{
+                color: #D9001B;
+            }
+        }
+    }
+
+    .pub-paper{
+        width: 48vw;
+        height: 13vw;
+        margin: 0 auto 5vw;
+        border: 0.05vw solid rgb(121,121,121);
+        box-shadow: 0.3vw 0.3vw 0.3vw rgba(0,0,0,0.3);
+
+        p{
+            .type3();
+            text-align: left;
+            margin: 1vw 2vw 0 0.8vw;
+        }
+
+        .paper-title{
+            font-size: 1.6vw;
+            color: #333333;
+        }
+
+        .paper-conference{
+            color: #555555;
+            font-size: 1.2vw;
+        }
+
+        .paper-authors{
+            color: #7F7F7F;
+            font-size: 0.9vw;
+        }
+
+        .button_wrapper{
+            margin-left: 0.8vw;
+            margin-top: 1vw;
+            display: flex;
+
+            div{
+                .button();
+            }
+        }
+    }
+}
+
+//Tools组件
+.tool{
+    width: 64.5vw;
+    margin:3.5vw auto 2vw;
+    display: flex;
+    height: 15vw;
+
+    .pic{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .word{
+        width: 50%;
+
+        .toolTitle{
+            font-family: "Arial Negreta", "Arial Normal", Arial, sans-serif;
+            font-weight: 700;
+            font-size: 1.6vw;
+            color: #333333;
+        }
+
+        .toolInfo{
+            font-family: "Arial Normal", Arial, sans-serif;
+            font-weight: 400;
+            font-size: 0.8vw;
+            color: rgb(85, 85, 85);
+            margin-bottom: 3vw;
+        }
+    }
+
+}
+
+.line-5{
+    width: 64.5vw;
+    height: 0.05vw;
+    background-color:rgb(121,121,121);
+    margin:0 auto;
+}
+
+//News组件
+.news_wrapper{
+    margin: 6vw auto 10vw;
+    width: 70.5vw;
+    display: flex;
+    flex-wrap: wrap;
+
+    .news{
+        width: 18vw;
+        height: 29vw;
+        margin:0 8vw 3vw 0;
+        border: 0.05vw solid rgb(121,121,121);
+        box-shadow: 0.3vw 0.3vw 0.3vw rgba(0,0,0,0.3);
+
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+
+        .img_wrapper{
+            height: 17.9vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .container{
+                border-radius: 1vw;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+            }
+
+        }
+
+        .item{
+            font-family: "Arial Negreta", "Arial Normal", Arial, sans-serif;
+            font-weight: 700;
+            font-size: 1.6vw;
+            margin:0 1.5vw;
+        }
+
+        .date{
+            font-family: "Arial Negreta", "Arial Normal", Arial, sans-serif;
+            font-weight: 700;
+            font-size: 1vw;
+            margin: 1.5vw auto 0.7vw 2vw;
+        }
+    }
+}
