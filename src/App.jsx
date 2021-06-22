@@ -1,25 +1,33 @@
 import React, { Component } from 'react'
-import { Layout, Menu, Breadcrumb } from 'antd';
-import './index.css'
+import { Route, Switch, Redirect } from 'react-router-dom'
 
-const { Header, Content, Footer } = Layout;
+import { links, routes } from './info'
+import MyNavLink from './components/MyNavLink'
 
 export default class App extends Component {
     render() {
         return (
-            <Layout>
-                <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
-                    <div className="logo">
-                        <img src={process.env.PUBLIC_URL + '/img/logo.png'} alt="" />
-                    </div>
-                    <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-                        <Menu.Item key="1">nav 1</Menu.Item>
-                        <Menu.Item key="2">nav 2</Menu.Item>
-                        <Menu.Item key="3">nav 3</Menu.Item>
-                    </Menu>
-                </Header>
-            </Layout>
+            <div>
+                <div className="header">
+                    <img className="header-img" src={process.env.PUBLIC_URL + '/img/logo.png'} alt="" />
+                    {
+                        links.map(link => {
+                            return <MyNavLink key={link.id} to={link.path}>{link.name}</MyNavLink>;
+                        })
+                    }
+                </div>
+
+                <div className="main">
+                    <Switch>
+                        {
+                            routes.map(route => {
+                                return <Route key={route.id} path={route.path} component={route.component} />
+                            })
+                        }
+                        <Redirect to="/home" />
+                    </Switch>
+                </div>
+            </div >
         )
     }
 }
-
