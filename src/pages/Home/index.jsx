@@ -3,6 +3,7 @@ import { ClockCircleOutlined} from '@ant-design/icons'
 import { teamLeaders, teamEvents, studyFields, coWorkers } from '../../info'
 import { TeamLeader, TeamEvent, StudyField, CoWorker } from '../../components/Home_func'
 
+
 export default class Home extends Component {
     render() {
         return (
@@ -93,9 +94,9 @@ export default class Home extends Component {
                         }
                     </div>
 
-                    <p className="footer-contact">联系我们: <a href="https://github.com/BUAA-SMART/MessageBoard">Github留言板</a></p>
+                    {/* <p className="footer-contact">联系我们: <a href="https://github.com/BUAA-SMART/MessageBoard">Github留言板</a></p>
                     <div className="line-2"></div>
-                    <p className="footer-content">Copyright © 2021. 北京航空航天大学ACT实验室-SMART小组</p>
+                    <p className="footer-content">Copyright © 2021. 北京航空航天大学ACT实验室-SMART小组</p> */}
                 </div>
             </div>
         )
